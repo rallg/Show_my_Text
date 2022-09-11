@@ -1,5 +1,5 @@
 #!/bin/sh
-# Installation file 'installsmy.sh' for Show-my-Text.
+# Installation file 'installsmy.sh' for Show_my_Text.
 
 # On Linux systems, you will need superuser permission to install.
 # On Termux, you already have the necessary permissions.
@@ -22,7 +22,7 @@
 
 if [ "$1" = "-h" ] || [ "$1" = "--help" ] ; then
 	echo "Need help? Please read the INSTALL file."
-	echo "Repository: https://github.com/rallg/Show-my-Text"
+	echo "Repository: https://github.com/rallg/Show_my_Text"
 	exit
 fi
 
@@ -54,7 +54,7 @@ if [ ! -w "$sushi" ] ; then
 	echo "This script re-writes one of the source code files,"
 	echo "so that it includes your display text. But the source code"
 	echo "does not have write permission. Usually, this can be fixed"
-	echo "by moving all of Show-my-Text to your home directory."
+	echo "by moving all of Show_my_Text to your home directory."
 	exit 2
 fi
 ok="yes"
@@ -62,7 +62,7 @@ ok="yes"
 [ "$t" = "yes" ] && [ ! -f "$terb" ] && ok="no"
 [ ! -f "$sushi" ] && ok="no"
 if [ "$ok" = "no" ] ; then
-	printf "\033[92mError.\033[0m Cannot find some Show-my-Text files.\n"
+	printf "\033[92mError.\033[0m Cannot find some Show_my_Text files.\n"
 	echo "Run ./installsmt.sh from its directory, not /path/to/installsmt.sh."
 	exit 3
 fi

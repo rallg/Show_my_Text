@@ -1,4 +1,4 @@
-# Show-my-Text
+# Show_my_Text
 Display a text block of your choice, for Linux and Termux
 
 
@@ -61,4 +61,4 @@ All released under GPLv2. See file LICENSE.
 
 ## VERSION:
 
-41.0 - Initial upload. Why 41.0? Based on 'GNOME Fonts' v41.0 code.
+41.0.1 - Initial upload. Why 41.0? Based on 'GNOME Fonts' v41.0 code.
