@@ -1,0 +1,58 @@
+# Installation
+
+You may build and install `showmytext' in Linux, or in Termux.
+Entire process takes less than one minute, if you already have
+the compiler and dependencies.
+Since `showmytext' is a GUI program, you need a graphical desktop.
+
+If installing into Termux:
+    Executable is placed in $PREFIX/bin
+    Desktop is placed in $HOME/.local/share/applications
+
+If installing into Linux: May need 'sudo' permission.
+    Executable is placed in /usr/local/bin
+    Desktop is placed in /usr/local/share/applications
+
+If you wish to change these locations, the simplest method is to edit variables
+'prefix', 'bindir', and 'datadir', near the top of file
+'resource/meson.termux' or 'resource/meson.linux'. Use absolute paths.
+
+
+## Compiler
+
+meson, ninja, and a C compiler (gcc or clang).
+
+
+## Dependencies
+
+glib
+gtk3
+libhandy
+harfbuzz
+fontconfig
+freetype2
+
+
+## Custom Text
+
+The displayed text is in file resource/src/your-text.c.
+Edit that file, as needed. You may use multiple languages, utf-8 encoding.
+No control characters, no tab, no backslash, no escape codes.
+You cannot put straight double quotes in the text, because it is the delimiter.
+You may use curly quotes.
+
+
+## Build and Install
+
+In this directory, run script `./installsmt.sh`
+
+It will detect your system, ask a question, then show further instructions.
+
+
+## Uninstall
+
+Only two files are installed. It is easy to remove them manually.
+Program: showmytext
+Desktop: showmytext.desktop
+
+
