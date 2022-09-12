@@ -1,5 +1,5 @@
 #!/bin/sh
-# Installation file 'installsmy.sh' for Show_my_Text.
+# Installation file 'installsmy.sh' for 'Show My Text'.
 
 # On Linux systems, you will need superuser permission to install.
 # On Termux, you already have the necessary permissions.
@@ -62,7 +62,7 @@ ok="yes"
 [ "$t" = "yes" ] && [ ! -f "$terb" ] && ok="no"
 [ ! -f "$sushi" ] && ok="no"
 if [ "$ok" = "no" ] ; then
-	printf "\033[92mError.\033[0m Cannot find some Show_my_Text files.\n"
+	printf "\033[92mError.\033[0m Cannot find some source files.\n"
 	echo "Run ./installsmt.sh from its directory, not /path/to/installsmt.sh."
 	exit 3
 fi

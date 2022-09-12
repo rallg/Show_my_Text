@@ -1,9 +1,8 @@
 # Installation
 
-You may build and install `showmytext' in Linux, or in Termux.
+You may build and install 'Show My Text' in Linux, or in Termux.
 Entire process takes less than one minute, if you already have
 the compiler and dependencies.
-Since `showmytext' is a GUI program, you need a graphical desktop.
 
 If installing into Termux:
     Executable is placed in $PREFIX/bin
@@ -31,6 +30,7 @@ libhandy
 harfbuzz
 fontconfig
 freetype2
+Graphical desktop, such as xfce4, LXDE, etc.
 
 
 ## Custom Text
